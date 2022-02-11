@@ -53,6 +53,7 @@ namespace SCR
             this.btInputData.TabIndex = 1;
             this.btInputData.Text = "輸入資料";
             this.btInputData.UseVisualStyleBackColor = true;
+            this.btInputData.Click += new System.EventHandler(this.btInputData_Click);
             // 
             // btOutptReport
             // 
@@ -63,8 +64,9 @@ namespace SCR
             this.btOutptReport.TabIndex = 2;
             this.btOutptReport.Text = "輸出報表";
             this.btOutptReport.UseVisualStyleBackColor = true;
+            this.btOutptReport.Click += new System.EventHandler(this.btOutptReport_Click);
             // 
-            // Main
+            // formMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -72,7 +74,7 @@ namespace SCR
             this.Controls.Add(this.btOutptReport);
             this.Controls.Add(this.btInputData);
             this.Controls.Add(this.laMainTitle);
-            this.Name = "Main";
+            this.Name = "formMain";
             this.Text = "Main";
             this.ResumeLayout(false);
             this.PerformLayout();

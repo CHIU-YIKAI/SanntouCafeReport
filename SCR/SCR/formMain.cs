@@ -16,5 +16,17 @@ namespace SCR
         {
             InitializeComponent();
         }
+
+        private void btInputData_Click(object sender, EventArgs e)
+        {
+            formInputData formInputData = new formInputData();
+            formInputData.Show();
+        }
+
+        private void btOutptReport_Click(object sender, EventArgs e)
+        {
+            formOutputReport formOutputReport = new formOutputReport();
+            formOutputReport.Show();
+        }
     }
 }
