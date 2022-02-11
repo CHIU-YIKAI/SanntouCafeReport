@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace SCR
 {
-    public partial class Main : Form
+    public partial class formMain : Form
     {
-        public Main()
+        public formMain()
         {
             InitializeComponent();
         }
