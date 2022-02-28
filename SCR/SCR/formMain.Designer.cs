@@ -42,7 +42,7 @@ namespace SCR
             this.laMainTitle.Name = "laMainTitle";
             this.laMainTitle.Size = new System.Drawing.Size(265, 60);
             this.laMainTitle.TabIndex = 0;
-            this.laMainTitle.Text = "香頭咖啡";
+            this.laMainTitle.Text = "香投咖啡";
             // 
             // btInputData
             // 

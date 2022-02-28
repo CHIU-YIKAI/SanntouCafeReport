@@ -19,8 +19,8 @@ namespace SCR
 
         private void btInputData_Click(object sender, EventArgs e)
         {
-            formInputData formInputData = new formInputData();
-            formInputData.Show();
+            FormInputOrder formInputOrder = new FormInputOrder();
+            formInputOrder.Show();
         }
 
         private void btOutptReport_Click(object sender, EventArgs e)
