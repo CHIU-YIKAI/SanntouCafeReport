@@ -32,6 +32,7 @@ namespace SCR
             this.laMainTitle = new System.Windows.Forms.Label();
             this.btInputData = new System.Windows.Forms.Button();
             this.btOutptReport = new System.Windows.Forms.Button();
+            this.btDataSetting = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // laMainTitle
@@ -66,11 +67,23 @@ namespace SCR
             this.btOutptReport.UseVisualStyleBackColor = true;
             this.btOutptReport.Click += new System.EventHandler(this.btOutptReport_Click);
             // 
+            // btDataSetting
+            // 
+            this.btDataSetting.Font = new System.Drawing.Font("標楷體", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btDataSetting.Location = new System.Drawing.Point(231, 349);
+            this.btDataSetting.Name = "btDataSetting";
+            this.btDataSetting.Size = new System.Drawing.Size(265, 60);
+            this.btDataSetting.TabIndex = 3;
+            this.btDataSetting.Text = "資料設定";
+            this.btDataSetting.UseVisualStyleBackColor = true;
+            this.btDataSetting.Click += new System.EventHandler(this.btDataSetting_Click);
+            // 
             // formMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(713, 357);
+            this.ClientSize = new System.Drawing.Size(713, 449);
+            this.Controls.Add(this.btDataSetting);
             this.Controls.Add(this.btOutptReport);
             this.Controls.Add(this.btInputData);
             this.Controls.Add(this.laMainTitle);
@@ -86,6 +99,7 @@ namespace SCR
         private System.Windows.Forms.Label laMainTitle;
         private System.Windows.Forms.Button btInputData;
         private System.Windows.Forms.Button btOutptReport;
+        private System.Windows.Forms.Button btDataSetting;
     }
 }
 

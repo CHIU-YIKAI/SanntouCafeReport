@@ -45,6 +45,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="formDataSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formDataSetting.Designer.cs">
+      <DependentUpon>formDataSetting.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormInputOrder.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -65,6 +71,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="formDataSetting.resx">
+      <DependentUpon>formDataSetting.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormInputOrder.resx">
       <DependentUpon>FormInputOrder.cs</DependentUpon>
     </EmbeddedResource>

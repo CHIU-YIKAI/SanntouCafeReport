@@ -59,20 +59,20 @@ namespace SCR
             // 
             this.cbReceptionist.Font = new System.Drawing.Font("標楷體", 18F);
             this.cbReceptionist.FormattingEnabled = true;
-            this.cbReceptionist.Location = new System.Drawing.Point(121, 226);
-            this.cbReceptionist.Margin = new System.Windows.Forms.Padding(2);
+            this.cbReceptionist.Location = new System.Drawing.Point(161, 282);
+            this.cbReceptionist.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbReceptionist.Name = "cbReceptionist";
-            this.cbReceptionist.Size = new System.Drawing.Size(176, 32);
+            this.cbReceptionist.Size = new System.Drawing.Size(233, 38);
             this.cbReceptionist.TabIndex = 32;
             // 
             // lbIdea
             // 
             this.lbIdea.AutoSize = true;
             this.lbIdea.Font = new System.Drawing.Font("標楷體", 18F);
-            this.lbIdea.Location = new System.Drawing.Point(11, 284);
-            this.lbIdea.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbIdea.Location = new System.Drawing.Point(15, 355);
+            this.lbIdea.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lbIdea.Name = "lbIdea";
-            this.lbIdea.Size = new System.Drawing.Size(106, 24);
+            this.lbIdea.Size = new System.Drawing.Size(133, 30);
             this.lbIdea.TabIndex = 30;
             this.lbIdea.Text = "回饋意見";
             // 
@@ -80,100 +80,100 @@ namespace SCR
             // 
             this.lbReceptionist.AutoSize = true;
             this.lbReceptionist.Font = new System.Drawing.Font("標楷體", 18F);
-            this.lbReceptionist.Location = new System.Drawing.Point(11, 231);
-            this.lbReceptionist.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbReceptionist.Location = new System.Drawing.Point(15, 289);
+            this.lbReceptionist.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lbReceptionist.Name = "lbReceptionist";
-            this.lbReceptionist.Size = new System.Drawing.Size(106, 24);
+            this.lbReceptionist.Size = new System.Drawing.Size(133, 30);
             this.lbReceptionist.TabIndex = 29;
             this.lbReceptionist.Text = "接待人員";
             // 
             // tbRealityPrice
             // 
             this.tbRealityPrice.Font = new System.Drawing.Font("標楷體", 18F);
-            this.tbRealityPrice.Location = new System.Drawing.Point(121, 168);
-            this.tbRealityPrice.Margin = new System.Windows.Forms.Padding(2);
+            this.tbRealityPrice.Location = new System.Drawing.Point(161, 210);
+            this.tbRealityPrice.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbRealityPrice.Name = "tbRealityPrice";
-            this.tbRealityPrice.Size = new System.Drawing.Size(176, 36);
+            this.tbRealityPrice.Size = new System.Drawing.Size(233, 43);
             this.tbRealityPrice.TabIndex = 28;
             // 
             // lbRealityPrice
             // 
             this.lbRealityPrice.AutoSize = true;
             this.lbRealityPrice.Font = new System.Drawing.Font("標楷體", 18F);
-            this.lbRealityPrice.Location = new System.Drawing.Point(11, 178);
-            this.lbRealityPrice.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbRealityPrice.Location = new System.Drawing.Point(15, 222);
+            this.lbRealityPrice.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lbRealityPrice.Name = "lbRealityPrice";
-            this.lbRealityPrice.Size = new System.Drawing.Size(106, 24);
+            this.lbRealityPrice.Size = new System.Drawing.Size(133, 30);
             this.lbRealityPrice.TabIndex = 27;
             this.lbRealityPrice.Text = "實收金額";
             // 
             // tbOrignPrice
             // 
             this.tbOrignPrice.Font = new System.Drawing.Font("標楷體", 18F);
-            this.tbOrignPrice.Location = new System.Drawing.Point(121, 115);
-            this.tbOrignPrice.Margin = new System.Windows.Forms.Padding(2);
+            this.tbOrignPrice.Location = new System.Drawing.Point(161, 144);
+            this.tbOrignPrice.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbOrignPrice.Name = "tbOrignPrice";
-            this.tbOrignPrice.Size = new System.Drawing.Size(176, 36);
+            this.tbOrignPrice.Size = new System.Drawing.Size(233, 43);
             this.tbOrignPrice.TabIndex = 26;
             // 
             // lbOrignPrice
             // 
             this.lbOrignPrice.AutoSize = true;
             this.lbOrignPrice.Font = new System.Drawing.Font("標楷體", 18F);
-            this.lbOrignPrice.Location = new System.Drawing.Point(11, 126);
-            this.lbOrignPrice.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbOrignPrice.Location = new System.Drawing.Point(15, 158);
+            this.lbOrignPrice.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lbOrignPrice.Name = "lbOrignPrice";
-            this.lbOrignPrice.Size = new System.Drawing.Size(106, 24);
+            this.lbOrignPrice.Size = new System.Drawing.Size(133, 30);
             this.lbOrignPrice.TabIndex = 25;
             this.lbOrignPrice.Text = "原始金額";
             // 
             // tbPeopleCount
             // 
             this.tbPeopleCount.Font = new System.Drawing.Font("標楷體", 18F);
-            this.tbPeopleCount.Location = new System.Drawing.Point(121, 62);
-            this.tbPeopleCount.Margin = new System.Windows.Forms.Padding(2);
+            this.tbPeopleCount.Location = new System.Drawing.Point(161, 78);
+            this.tbPeopleCount.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbPeopleCount.Name = "tbPeopleCount";
-            this.tbPeopleCount.Size = new System.Drawing.Size(176, 36);
+            this.tbPeopleCount.Size = new System.Drawing.Size(233, 43);
             this.tbPeopleCount.TabIndex = 24;
             // 
             // lbPeopleCount
             // 
             this.lbPeopleCount.AutoSize = true;
             this.lbPeopleCount.Font = new System.Drawing.Font("標楷體", 18F);
-            this.lbPeopleCount.Location = new System.Drawing.Point(11, 73);
-            this.lbPeopleCount.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbPeopleCount.Location = new System.Drawing.Point(15, 91);
+            this.lbPeopleCount.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lbPeopleCount.Name = "lbPeopleCount";
-            this.lbPeopleCount.Size = new System.Drawing.Size(106, 24);
+            this.lbPeopleCount.Size = new System.Drawing.Size(133, 30);
             this.lbPeopleCount.TabIndex = 23;
             this.lbPeopleCount.Text = "同行人數";
             // 
             // tbCustomerName
             // 
             this.tbCustomerName.Font = new System.Drawing.Font("標楷體", 18F);
-            this.tbCustomerName.Location = new System.Drawing.Point(121, 10);
-            this.tbCustomerName.Margin = new System.Windows.Forms.Padding(2);
+            this.tbCustomerName.Location = new System.Drawing.Point(161, 12);
+            this.tbCustomerName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbCustomerName.Name = "tbCustomerName";
-            this.tbCustomerName.Size = new System.Drawing.Size(176, 36);
+            this.tbCustomerName.Size = new System.Drawing.Size(233, 43);
             this.tbCustomerName.TabIndex = 22;
             // 
             // lbCustomerName
             // 
             this.lbCustomerName.AutoSize = true;
             this.lbCustomerName.Font = new System.Drawing.Font("標楷體", 18F);
-            this.lbCustomerName.Location = new System.Drawing.Point(11, 20);
-            this.lbCustomerName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbCustomerName.Location = new System.Drawing.Point(15, 25);
+            this.lbCustomerName.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lbCustomerName.Name = "lbCustomerName";
-            this.lbCustomerName.Size = new System.Drawing.Size(106, 24);
+            this.lbCustomerName.Size = new System.Drawing.Size(133, 30);
             this.lbCustomerName.TabIndex = 21;
             this.lbCustomerName.Text = "顧客名稱";
             // 
             // tbIdea
             // 
             this.tbIdea.Font = new System.Drawing.Font("標楷體", 12F);
-            this.tbIdea.Location = new System.Drawing.Point(121, 274);
-            this.tbIdea.Margin = new System.Windows.Forms.Padding(2);
+            this.tbIdea.Location = new System.Drawing.Point(161, 342);
+            this.tbIdea.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbIdea.Name = "tbIdea";
-            this.tbIdea.Size = new System.Drawing.Size(176, 178);
+            this.tbIdea.Size = new System.Drawing.Size(233, 222);
             this.tbIdea.TabIndex = 33;
             this.tbIdea.Text = "";
             // 
@@ -181,30 +181,30 @@ namespace SCR
             // 
             this.lbOrderTime.AutoSize = true;
             this.lbOrderTime.Font = new System.Drawing.Font("標楷體", 18F);
-            this.lbOrderTime.Location = new System.Drawing.Point(313, 195);
-            this.lbOrderTime.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbOrderTime.Location = new System.Drawing.Point(417, 81);
+            this.lbOrderTime.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lbOrderTime.Name = "lbOrderTime";
-            this.lbOrderTime.Size = new System.Drawing.Size(106, 24);
+            this.lbOrderTime.Size = new System.Drawing.Size(133, 30);
             this.lbOrderTime.TabIndex = 40;
             this.lbOrderTime.Text = "點餐時間";
             // 
             // tbDishCount
             // 
             this.tbDishCount.Font = new System.Drawing.Font("標楷體", 18F);
-            this.tbDishCount.Location = new System.Drawing.Point(422, 132);
-            this.tbDishCount.Margin = new System.Windows.Forms.Padding(2);
+            this.tbDishCount.Location = new System.Drawing.Point(559, 271);
+            this.tbDishCount.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbDishCount.Name = "tbDishCount";
-            this.tbDishCount.Size = new System.Drawing.Size(176, 36);
+            this.tbDishCount.Size = new System.Drawing.Size(233, 43);
             this.tbDishCount.TabIndex = 39;
             // 
             // lbDishCount
             // 
             this.lbDishCount.AutoSize = true;
             this.lbDishCount.Font = new System.Drawing.Font("標楷體", 18F);
-            this.lbDishCount.Location = new System.Drawing.Point(313, 142);
-            this.lbDishCount.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbDishCount.Location = new System.Drawing.Point(413, 284);
+            this.lbDishCount.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lbDishCount.Name = "lbDishCount";
-            this.lbDishCount.Size = new System.Drawing.Size(106, 24);
+            this.lbDishCount.Size = new System.Drawing.Size(133, 30);
             this.lbDishCount.TabIndex = 38;
             this.lbDishCount.Text = "餐點數量";
             // 
@@ -212,10 +212,10 @@ namespace SCR
             // 
             this.lbDishName.AutoSize = true;
             this.lbDishName.Font = new System.Drawing.Font("標楷體", 18F);
-            this.lbDishName.Location = new System.Drawing.Point(313, 90);
-            this.lbDishName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbDishName.Location = new System.Drawing.Point(413, 218);
+            this.lbDishName.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lbDishName.Name = "lbDishName";
-            this.lbDishName.Size = new System.Drawing.Size(106, 24);
+            this.lbDishName.Size = new System.Drawing.Size(133, 30);
             this.lbDishName.TabIndex = 36;
             this.lbDishName.Text = "餐點名稱";
             // 
@@ -223,10 +223,10 @@ namespace SCR
             // 
             this.lbDishGroup.AutoSize = true;
             this.lbDishGroup.Font = new System.Drawing.Font("標楷體", 18F);
-            this.lbDishGroup.Location = new System.Drawing.Point(313, 37);
-            this.lbDishGroup.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbDishGroup.Location = new System.Drawing.Point(413, 152);
+            this.lbDishGroup.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lbDishGroup.Name = "lbDishGroup";
-            this.lbDishGroup.Size = new System.Drawing.Size(106, 24);
+            this.lbDishGroup.Size = new System.Drawing.Size(133, 30);
             this.lbDishGroup.TabIndex = 34;
             this.lbDishGroup.Text = "餐點分類";
             // 
@@ -235,38 +235,39 @@ namespace SCR
             this.tpOrderTime.CustomFormat = "yyyy-MM-dd HH:mm";
             this.tpOrderTime.Font = new System.Drawing.Font("新細明體", 14F);
             this.tpOrderTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.tpOrderTime.Location = new System.Drawing.Point(419, 194);
-            this.tpOrderTime.Margin = new System.Windows.Forms.Padding(2);
+            this.tpOrderTime.Location = new System.Drawing.Point(559, 79);
+            this.tpOrderTime.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tpOrderTime.Name = "tpOrderTime";
-            this.tpOrderTime.Size = new System.Drawing.Size(179, 30);
+            this.tpOrderTime.Size = new System.Drawing.Size(237, 35);
             this.tpOrderTime.TabIndex = 42;
             // 
             // cbDishName
             // 
             this.cbDishName.Font = new System.Drawing.Font("標楷體", 18F);
             this.cbDishName.FormattingEnabled = true;
-            this.cbDishName.Location = new System.Drawing.Point(422, 83);
-            this.cbDishName.Margin = new System.Windows.Forms.Padding(2);
+            this.cbDishName.Location = new System.Drawing.Point(559, 210);
+            this.cbDishName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbDishName.Name = "cbDishName";
-            this.cbDishName.Size = new System.Drawing.Size(176, 32);
+            this.cbDishName.Size = new System.Drawing.Size(233, 38);
             this.cbDishName.TabIndex = 43;
             // 
             // cbDishGroup
             // 
             this.cbDishGroup.Font = new System.Drawing.Font("標楷體", 18F);
             this.cbDishGroup.FormattingEnabled = true;
-            this.cbDishGroup.Location = new System.Drawing.Point(422, 30);
-            this.cbDishGroup.Margin = new System.Windows.Forms.Padding(2);
+            this.cbDishGroup.Location = new System.Drawing.Point(559, 144);
+            this.cbDishGroup.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbDishGroup.Name = "cbDishGroup";
-            this.cbDishGroup.Size = new System.Drawing.Size(176, 32);
+            this.cbDishGroup.Size = new System.Drawing.Size(233, 38);
             this.cbDishGroup.TabIndex = 44;
             // 
             // btWriteOrder
             // 
             this.btWriteOrder.Font = new System.Drawing.Font("標楷體", 18F);
-            this.btWriteOrder.Location = new System.Drawing.Point(317, 307);
+            this.btWriteOrder.Location = new System.Drawing.Point(423, 384);
+            this.btWriteOrder.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btWriteOrder.Name = "btWriteOrder";
-            this.btWriteOrder.Size = new System.Drawing.Size(281, 54);
+            this.btWriteOrder.Size = new System.Drawing.Size(375, 68);
             this.btWriteOrder.TabIndex = 45;
             this.btWriteOrder.Text = "寫入點餐資訊";
             this.btWriteOrder.UseVisualStyleBackColor = true;
@@ -274,18 +275,20 @@ namespace SCR
             // btSaveAll
             // 
             this.btSaveAll.Font = new System.Drawing.Font("標楷體", 18F);
-            this.btSaveAll.Location = new System.Drawing.Point(317, 387);
+            this.btSaveAll.Location = new System.Drawing.Point(423, 484);
+            this.btSaveAll.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btSaveAll.Name = "btSaveAll";
-            this.btSaveAll.Size = new System.Drawing.Size(281, 62);
+            this.btSaveAll.Size = new System.Drawing.Size(375, 78);
             this.btSaveAll.TabIndex = 46;
             this.btSaveAll.Text = "儲存";
             this.btSaveAll.UseVisualStyleBackColor = true;
             // 
             // tbOrderInformation
             // 
-            this.tbOrderInformation.Location = new System.Drawing.Point(603, 39);
+            this.tbOrderInformation.Location = new System.Drawing.Point(804, 49);
+            this.tbOrderInformation.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tbOrderInformation.Name = "tbOrderInformation";
-            this.tbOrderInformation.Size = new System.Drawing.Size(290, 410);
+            this.tbOrderInformation.Size = new System.Drawing.Size(385, 512);
             this.tbOrderInformation.TabIndex = 47;
             this.tbOrderInformation.Text = "";
             // 
@@ -293,18 +296,18 @@ namespace SCR
             // 
             this.lbOrderInformation.AutoSize = true;
             this.lbOrderInformation.Font = new System.Drawing.Font("標楷體", 18F);
-            this.lbOrderInformation.Location = new System.Drawing.Point(678, 12);
-            this.lbOrderInformation.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbOrderInformation.Location = new System.Drawing.Point(904, 15);
+            this.lbOrderInformation.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lbOrderInformation.Name = "lbOrderInformation";
-            this.lbOrderInformation.Size = new System.Drawing.Size(154, 24);
+            this.lbOrderInformation.Size = new System.Drawing.Size(193, 30);
             this.lbOrderInformation.TabIndex = 48;
             this.lbOrderInformation.Text = "檢視點餐資訊";
             // 
             // FormInputOrder
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(905, 461);
+            this.ClientSize = new System.Drawing.Size(1207, 576);
             this.Controls.Add(this.lbOrderInformation);
             this.Controls.Add(this.tbOrderInformation);
             this.Controls.Add(this.btSaveAll);
@@ -329,7 +332,7 @@ namespace SCR
             this.Controls.Add(this.lbPeopleCount);
             this.Controls.Add(this.tbCustomerName);
             this.Controls.Add(this.lbCustomerName);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FormInputOrder";
             this.Text = "FormInputOrder";
             this.ResumeLayout(false);

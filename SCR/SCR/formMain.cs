@@ -28,5 +28,11 @@ namespace SCR
             formOutputReport formOutputReport = new formOutputReport();
             formOutputReport.Show();
         }
+
+        private void btDataSetting_Click(object sender, EventArgs e)
+        {
+            formDataSetting formDataSetting = new formDataSetting();
+            formDataSetting.Show();
+        }
     }
 }

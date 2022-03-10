@@ -1,6 +1,11 @@
 {
-    "name" : "str",
-    "group" : "int",
-    "orignPrice" : "int",
-    "cost" : "int"
+    "classification" : "str",
+    "data": [
+        {
+            "name" : "str",
+            "group" : "int",
+            "orignPrice" : "int",
+            "cost" : "int"
+        }
+    ]
 }
