@@ -1,0 +1,9 @@
+{
+    "settingName" : "string",
+    "settingData" : [
+        {
+            "ID" : "int",
+            "Value" : "string"
+        }
+    ]
+}

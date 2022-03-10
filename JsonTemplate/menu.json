@@ -1,0 +1,6 @@
+{
+    "name" : "str",
+    "group" : "int",
+    "orignPrice" : "int",
+    "cost" : "int"
+}

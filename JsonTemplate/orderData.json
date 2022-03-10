@@ -1,0 +1,20 @@
+{
+    "customerName" : "str",
+    "peopleCount" : "int",
+    "orignPrice" : "int",
+    "realityPrice" : "int",
+    "receptionist" : "string",
+    "idea" : "string",
+    "orderData":[
+        {
+            "orderTime" : "dateTime",
+            "dishData" : [
+                {
+                    "dishGroup" : "int",
+                    "dishName" : "int",
+                    "dishCount" : "int"
+                }
+            ]
+        }
+    ]
+}
