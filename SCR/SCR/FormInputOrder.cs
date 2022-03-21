@@ -21,7 +21,7 @@ namespace SCR
 
         private DataSet loadDatatoDataset(string sqlCom)
         {
-            string conStr = @"Provider = Microsoft.Jet.OLEDB.4.0; Data Source = C:\Users\User\Desktop\專案資料\SanntouCafeReport\Database\test.mdb";
+            string conStr = @"Provider = Microsoft.Jet.OLEDB.4.0; Data Source = C:\Users\User\Desktop\專案資料\SanntouCafeReport\Database\revenueDB.mdb";
             OleDbConnection oledCon = new OleDbConnection(conStr);
             OleDbDataAdapter dataAdapter = new OleDbDataAdapter(sqlCom, oledCon);
             DataSet ds = new DataSet();
@@ -33,25 +33,25 @@ namespace SCR
 
         private List<string> loadMemberData()
         {
-            DataSet ds = loadDatatoDataset(@"select * from memberData");
+            DataSet ds = loadDatatoDataset(@"select * from staff");
             List<string> memberList = new List<string>();
             for (int i = 0; i < ds.Tables[0].Rows.Count; i++)
-                memberList.Add(ds.Tables[0].Rows[i]["memberName"].ToString());
+                memberList.Add(ds.Tables[0].Rows[i]["staffName"].ToString());
             return memberList;
         }
 
         private List<string> loadMenuGroup()
         {
-            DataSet ds = loadDatatoDataset(@"select * from menuGroup");
+            DataSet ds = loadDatatoDataset(@"select * from dishesGroup");
             List<string> memberList = new List<string>();
             for (int i = 0; i < ds.Tables[0].Rows.Count; i++)
-                memberList.Add(ds.Tables[0].Rows[i]["menuGroupName"].ToString());
+                memberList.Add(ds.Tables[0].Rows[i]["groupName"].ToString());
             return memberList;
         }
 
         private void getDishesData()
         {
-            DataSet ds = loadDatatoDataset(@"select * from menuData,menuGroup where menuData.menuGroupID = menuGroup.menuGroupID");
+            DataSet ds = loadDatatoDataset(@"select * from dishesData, dishesGroup where dishesData.groupID = dishesGroup.groupID");
             List<string> memberList = new List<string>();
             string groupName, name;
             int orignPrice, costPrice;
@@ -60,8 +60,8 @@ namespace SCR
             {
                 costPrice = Convert.ToInt32(ds.Tables[0].Rows[i]["costPrice"]);
                 orignPrice = Convert.ToInt32(ds.Tables[0].Rows[i]["orignPrice"]);
-                groupName = ds.Tables[0].Rows[i]["menuGroupName"].ToString();
-                name = ds.Tables[0].Rows[i]["menuDataName"].ToString();
+                groupName = ds.Tables[0].Rows[i]["groupName"].ToString();
+                name = ds.Tables[0].Rows[i]["dishesName"].ToString();
                 dishesData.Add(new dishes(name, orignPrice, costPrice, groupName));
             }
         }
