@@ -17,22 +17,88 @@ namespace SCR
             InitializeComponent();
         }
 
-        private void loadForm(object sender, EventArgs e)
+        List<dishes> dishesData;
+
+        private DataSet loadDatatoDataset(string sqlCom)
         {
             string conStr = @"Provider = Microsoft.Jet.OLEDB.4.0; Data Source = C:\Users\User\Desktop\專案資料\SanntouCafeReport\Database\test.mdb";
-            string searchStr = @"select * from memberData";
             OleDbConnection oledCon = new OleDbConnection(conStr);
-            OleDbDataAdapter dataAdapter = new OleDbDataAdapter(searchStr, oledCon);
+            OleDbDataAdapter dataAdapter = new OleDbDataAdapter(sqlCom, oledCon);
             DataSet ds = new DataSet();
             dataAdapter.Fill(ds, "test");
-
-            List<string> test = new List<string>();
-            for (int i = 0; i < ds.Tables[0].Rows.Count; i++)
-                test.Add(ds.Tables[0].Rows[i]["memberName"].ToString());
-
-            cbReceptionist.Items.AddRange(test.ToArray());
             oledCon.Close();
             oledCon.Dispose();
+            return ds;
+        }
+
+        private List<string> loadMemberData()
+        {
+            DataSet ds = loadDatatoDataset(@"select * from memberData");
+            List<string> memberList = new List<string>();
+            for (int i = 0; i < ds.Tables[0].Rows.Count; i++)
+                memberList.Add(ds.Tables[0].Rows[i]["memberName"].ToString());
+            return memberList;
+        }
+
+        private List<string> loadMenuGroup()
+        {
+            DataSet ds = loadDatatoDataset(@"select * from menuGroup");
+            List<string> memberList = new List<string>();
+            for (int i = 0; i < ds.Tables[0].Rows.Count; i++)
+                memberList.Add(ds.Tables[0].Rows[i]["menuGroupName"].ToString());
+            return memberList;
+        }
+
+        private void getDishesData()
+        {
+            DataSet ds = loadDatatoDataset(@"select * from menuData,menuGroup where menuData.menuGroupID = menuGroup.menuGroupID");
+            List<string> memberList = new List<string>();
+            string groupName, name;
+            int orignPrice, costPrice;
+
+            for (int i = 0; i < ds.Tables[0].Rows.Count; i++)
+            {
+                costPrice = Convert.ToInt32(ds.Tables[0].Rows[i]["costPrice"]);
+                orignPrice = Convert.ToInt32(ds.Tables[0].Rows[i]["orignPrice"]);
+                groupName = ds.Tables[0].Rows[i]["menuGroupName"].ToString();
+                name = ds.Tables[0].Rows[i]["menuDataName"].ToString();
+                dishesData.Add(new dishes(name, orignPrice, costPrice, groupName));
+            }
+        }
+
+        private List<string> loadMenuName(string groupName)
+        {
+            List<string> menuData = new List<string>();
+
+            foreach (dishes dish in dishesData)
+            {
+                if (dish._groupName == groupName)
+                {
+                    menuData.Add(dish._name);
+                }
+            }
+
+            return menuData;
+
+        }
+
+        private void loadForm(object sender, EventArgs e)
+        {
+            dishesData = new List<dishes>();
+            List<string> memberList = loadMemberData();
+            List<string> menuGroupName = loadMenuGroup();
+
+            getDishesData();
+            cbDishGroup.Items.AddRange(menuGroupName.ToArray());
+            cbReceptionist.Items.AddRange(memberList.ToArray());
+        }
+
+        private void cbDishGroup_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cbDishName.Enabled = true;
+            List<string> menuData = loadMenuName(cbDishGroup.Text);
+            cbDishName.Items.Clear();
+            cbDishName.Items.AddRange(menuData.ToArray());
         }
     }
 }

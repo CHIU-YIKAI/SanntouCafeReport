@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="dishes.cs" />
     <Compile Include="formDataSetting.cs">
       <SubType>Form</SubType>
     </Compile>
