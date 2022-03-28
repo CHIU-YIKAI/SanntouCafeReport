@@ -91,9 +91,6 @@ namespace SCR
             getDishesData();
             cbDishGroup.Items.AddRange(menuGroupName.ToArray());
             cbReceptionist.Items.AddRange(memberList.ToArray());
-
-
-
         }
 
         private void cbDishGroup_SelectedIndexChanged(object sender, EventArgs e)
@@ -105,26 +102,46 @@ namespace SCR
             cbDishName.Items.AddRange(menuData.ToArray());
         }
 
+        private void updateOrignPrice()
+        {
+            int totalPrice = Convert.ToInt32(tbOrignPrice.Text);
+            string count, price ;
+            for (int i = 0; i < dgvOrderData.Rows.Count; i++)
+            {
+                count = dgvOrderData.Rows[i].Cells[2].Value.ToString();
+                price = dgvOrderData.Rows[i].Cells[3].Value.ToString();
+                totalPrice += Convert.ToInt32(count) * Convert.ToInt32(price);
+            }
+            tbOrignPrice.Text = totalPrice.ToString();
+        }
+
         private void btWriteOrder_Click(object sender, EventArgs e)
         {
             string dishesName = cbDishName.Text;
             string orderTime = tpOrderTime.Text;
             int dishesCount = Convert.ToInt16(tbDishCount.Text);
-            dgvOrderData.Rows.Add();
-            dgvOrderData.Rows[dgvOrderData.Rows.Count - 1].Cells[0].Value = orderTime;
-            dgvOrderData.Rows[dgvOrderData.Rows.Count - 1].Cells[1].Value = dishesName;
-            dgvOrderData.Rows[dgvOrderData.Rows.Count - 1].Cells[2].Value = dishesCount;
+            int orignPrice = 0;
 
             foreach (dishes dish in dishesData)
             {
                 if (dish._name == dishesName)
-                {
-                    int totalPrice = Convert.ToInt16(tbOrignPrice.Text);
-                    totalPrice += dish._orignPrice * dishesCount;
-                    tbOrignPrice.Text = totalPrice.ToString();
+                {                    
+                    orignPrice = dish._orignPrice;
+                    break;
                 }
 
             }
+            dgvOrderData.Rows.Add();
+            dgvOrderData.Rows[dgvOrderData.Rows.Count - 1].Cells[0].Value = orderTime;
+            dgvOrderData.Rows[dgvOrderData.Rows.Count - 1].Cells[1].Value = dishesName;
+            dgvOrderData.Rows[dgvOrderData.Rows.Count - 1].Cells[2].Value = dishesCount;
+            dgvOrderData.Rows[dgvOrderData.Rows.Count - 1].Cells[3].Value = orignPrice;
+            updateOrignPrice();
+        }
+
+        private void dgvOrderData_CellEndEdit(object sender, DataGridViewCellEventArgs e)
+        {
+            updateOrignPrice();
         }
     }
 }
