@@ -91,14 +91,40 @@ namespace SCR
             getDishesData();
             cbDishGroup.Items.AddRange(menuGroupName.ToArray());
             cbReceptionist.Items.AddRange(memberList.ToArray());
+
+
+
         }
 
         private void cbDishGroup_SelectedIndexChanged(object sender, EventArgs e)
         {
+            cbDishName.Text = "";
             cbDishName.Enabled = true;
             List<string> menuData = loadMenuName(cbDishGroup.Text);
             cbDishName.Items.Clear();
             cbDishName.Items.AddRange(menuData.ToArray());
+        }
+
+        private void btWriteOrder_Click(object sender, EventArgs e)
+        {
+            string dishesName = cbDishName.Text;
+            string orderTime = tpOrderTime.Text;
+            int dishesCount = Convert.ToInt16(tbDishCount.Text);
+            dgvOrderData.Rows.Add();
+            dgvOrderData.Rows[dgvOrderData.Rows.Count - 1].Cells[0].Value = orderTime;
+            dgvOrderData.Rows[dgvOrderData.Rows.Count - 1].Cells[1].Value = dishesName;
+            dgvOrderData.Rows[dgvOrderData.Rows.Count - 1].Cells[2].Value = dishesCount;
+
+            foreach (dishes dish in dishesData)
+            {
+                if (dish._name == dishesName)
+                {
+                    int totalPrice = Convert.ToInt16(tbOrignPrice.Text);
+                    totalPrice += dish._orignPrice * dishesCount;
+                    tbOrignPrice.Text = totalPrice.ToString();
+                }
+
+            }
         }
     }
 }
