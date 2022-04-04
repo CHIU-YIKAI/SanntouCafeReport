@@ -105,7 +105,7 @@ namespace SCR
         private void updateOrignPrice()
         {
             int totalPrice = Convert.ToInt32(tbOrignPrice.Text);
-            string count, price ;
+            string count, price;
             for (int i = 0; i < dgvOrderData.Rows.Count; i++)
             {
                 count = dgvOrderData.Rows[i].Cells[2].Value.ToString();
@@ -122,10 +122,21 @@ namespace SCR
             int dishesCount = Convert.ToInt16(tbDishCount.Text);
             int orignPrice = 0;
 
+            if (dishesCount == 0)
+            {
+                MessageBox.Show("餐點數量不可為0!");
+                return;
+            }
+            if (dishesName.Trim() == "")
+            {
+                MessageBox.Show("請選擇餐點名稱!");
+                return;
+            }
+
             foreach (dishes dish in dishesData)
             {
                 if (dish._name == dishesName)
-                {                    
+                {
                     orignPrice = dish._orignPrice;
                     break;
                 }
@@ -142,6 +153,17 @@ namespace SCR
         private void dgvOrderData_CellEndEdit(object sender, DataGridViewCellEventArgs e)
         {
             updateOrignPrice();
+        }
+
+        private void btSaveAll_Click(object sender, EventArgs e)
+        {
+            string customerName = tbCustomerName.Text;
+            int customerCount = Convert.ToInt16(tbPeopleCount.Text);
+            int realityPrice = Convert.ToInt16(tbRealityPrice.Text);
+            string receptionist = cbReceptionist.Text;
+            string idea = tbIdea.Text;
+            
+
         }
     }
 }
