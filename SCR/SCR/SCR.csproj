@@ -81,6 +81,9 @@
     <EmbeddedResource Include="formDataSetting.resx">
       <DependentUpon>formDataSetting.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="formExpenses.resx">
+      <DependentUpon>formExpenses.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormInputOrder.resx">
       <DependentUpon>FormInputOrder.cs</DependentUpon>
     </EmbeddedResource>
