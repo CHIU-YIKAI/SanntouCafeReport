@@ -52,6 +52,12 @@
     <Compile Include="formDataSetting.Designer.cs">
       <DependentUpon>formDataSetting.cs</DependentUpon>
     </Compile>
+    <Compile Include="formExpenses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formExpenses.Designer.cs">
+      <DependentUpon>formExpenses.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormInputOrder.cs">
       <SubType>Form</SubType>
     </Compile>

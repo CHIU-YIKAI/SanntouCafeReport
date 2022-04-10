@@ -34,5 +34,11 @@ namespace SCR
             formDataSetting formDataSetting = new formDataSetting();
             formDataSetting.Show();
         }
+
+        private void btExpensesData_Click(object sender, EventArgs e)
+        {
+            formExpenses formExpenses = new formExpenses();
+            formExpenses.Show();
+        }
     }
 }
