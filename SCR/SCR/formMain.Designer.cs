@@ -40,7 +40,7 @@ namespace SCR
             // 
             this.laMainTitle.AutoSize = true;
             this.laMainTitle.Font = new System.Drawing.Font("標楷體", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.laMainTitle.Location = new System.Drawing.Point(173, 7);
+            this.laMainTitle.Location = new System.Drawing.Point(138, 9);
             this.laMainTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.laMainTitle.Name = "laMainTitle";
             this.laMainTitle.Size = new System.Drawing.Size(212, 48);
@@ -50,7 +50,7 @@ namespace SCR
             // btInputData
             // 
             this.btInputData.Font = new System.Drawing.Font("標楷體", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btInputData.Location = new System.Drawing.Point(173, 102);
+            this.btInputData.Location = new System.Drawing.Point(30, 76);
             this.btInputData.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btInputData.Name = "btInputData";
             this.btInputData.Size = new System.Drawing.Size(199, 48);
@@ -62,7 +62,7 @@ namespace SCR
             // btOutptReport
             // 
             this.btOutptReport.Font = new System.Drawing.Font("標楷體", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btOutptReport.Location = new System.Drawing.Point(173, 226);
+            this.btOutptReport.Location = new System.Drawing.Point(264, 76);
             this.btOutptReport.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btOutptReport.Name = "btOutptReport";
             this.btOutptReport.Size = new System.Drawing.Size(199, 49);
@@ -74,7 +74,7 @@ namespace SCR
             // btDataSetting
             // 
             this.btDataSetting.Font = new System.Drawing.Font("標楷體", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btDataSetting.Location = new System.Drawing.Point(173, 289);
+            this.btDataSetting.Location = new System.Drawing.Point(264, 139);
             this.btDataSetting.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btDataSetting.Name = "btDataSetting";
             this.btDataSetting.Size = new System.Drawing.Size(199, 48);
@@ -86,12 +86,12 @@ namespace SCR
             // btExpensesData
             // 
             this.btExpensesData.Font = new System.Drawing.Font("標楷體", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btExpensesData.Location = new System.Drawing.Point(173, 163);
+            this.btExpensesData.Location = new System.Drawing.Point(30, 137);
             this.btExpensesData.Margin = new System.Windows.Forms.Padding(2);
             this.btExpensesData.Name = "btExpensesData";
             this.btExpensesData.Size = new System.Drawing.Size(199, 49);
             this.btExpensesData.TabIndex = 4;
-            this.btExpensesData.Text = "輸出報表";
+            this.btExpensesData.Text = "輸入支出資料";
             this.btExpensesData.UseVisualStyleBackColor = true;
             this.btExpensesData.Click += new System.EventHandler(this.btExpensesData_Click);
             // 
@@ -99,7 +99,7 @@ namespace SCR
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(535, 359);
+            this.ClientSize = new System.Drawing.Size(492, 213);
             this.Controls.Add(this.btExpensesData);
             this.Controls.Add(this.btDataSetting);
             this.Controls.Add(this.btOutptReport);
