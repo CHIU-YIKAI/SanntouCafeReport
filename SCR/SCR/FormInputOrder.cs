@@ -155,14 +155,30 @@ namespace SCR
             updateOrignPrice();
         }
 
+        private void initFrame()
+        {
+
+        }
+
         private void btSaveAll_Click(object sender, EventArgs e)
         {
-            string customerName = tbCustomerName.Text;
-            int customerCount = Convert.ToInt16(tbPeopleCount.Text);
-            int realityPrice = Convert.ToInt16(tbRealityPrice.Text);
-            string receptionist = cbReceptionist.Text;
-            string idea = tbIdea.Text;
-            
+            try
+            {
+                string customerName = tbCustomerName.Text;
+                int customerCount = Convert.ToInt16(tbPeopleCount.Text);
+                int realityPrice = Convert.ToInt16(tbRealityPrice.Text);
+                string receptionist = cbReceptionist.Text;
+                string idea = tbIdea.Text;
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("資料輸入錯誤!!");
+                return;
+            }
+
+            loadDatatoDataset("INSERT INTO checkoutData (staffID, custumberName, custumberCount, orignPrice, realityPrice,idea) OUTPUT Inserted.checkoutID VALUES (0,0932392474,4,500,450,'好吃')");
+            MessageBox.Show("處存成功");
+            initFrame();
 
         }
     }
